@@ -1,0 +1,48 @@
+body::-webkit-scrollbar{
+    display: none;
+}
+.revCont{
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 10px;
+    border-radius: 10px;
+}
+.revCont .imgCont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.revCont .imgCont img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.revCont .message{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.revCont .name{
+    margin-top: 10px;
+}
+.review{
+    position: relative;
+    top: 10px;
+    display: flex;
+    padding: 0 40px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+h3{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mapview{
+    height: 400px;
+    width: 100%;
+    margin-bottom: 100px;
+}
+.mapview iframe{
+    width: 100%;
+}

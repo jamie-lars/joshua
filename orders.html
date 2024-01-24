@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="orders.css">
+    <title>Orders</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            JOSH'S COLLECTIONS
+        </div>
+
+        <div class="srcCont">
+            <div class="">
+                <img src="icons/search-icon.png" alt="">
+                <input type="text" placeholder="search orders">
+            </div>
+            
+            <button>Search</button>
+        </div>
+        <nav>
+            <li><a href="index.html">
+                <img src="icons/home.png" alt="">
+                <p>Home</p>
+            </a></li>
+            <li><a href="products.html">
+                <img src="icons/checkout-lock-icon.png" alt="">
+                <p>Products</p>
+            </a></li>
+            <li class="cart"><a href="cart.html">
+                <p class="cartCount">3</p>
+                <img src="icons/cart.png" alt="">
+                <p>Cart</p>
+            </a></li>
+            <li class="active"><a href="#">
+                <img src="icons/checkmark.png" alt="">
+                <p>Orders</p>
+            </a></li>
+            <li><a href="contact.html">
+                <img src="icons/contact.png" alt="">
+                <p>Contact</p>
+            </a></li>
+        </nav>
+        <div class="menu">
+            <img src="icons/menu.png" alt="">
+        </div>
+    </header>
+
+    <marquee behavior="" direction="">We've got you covered. You can get up to 50% discount this December. ----- MERRY CHRISTMAS TO YOU ALL </marquee>
+
+    <h1 class="chkOut">CHECKOUT HERE  <span><img src="icons/checkmark.png" alt=""></span></h1>
+
+    <section class="ordersCont">
+
+        <div class="order">
+            <div class="orderBlock">
+                <div class="leftSide">
+                    <div class="date">12th December, 2023</div>
+        
+                    <div class="imgCont">
+                        <img src="products/coffeemaker-with-glass-carafe-black.jpg" alt="">
+                    </div>
+        
+                    <div class="qty">
+                        <p>Quantity: <span><input type="number" value="1"></span></p>
+                        <div class="btns">
+                            <button>+</button>
+                            <button>-</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightSide">
+                    <h3>Delivered on:</h3>
+        
+                    <div class="shipOn">
+                    <div class="shipped">
+                        <h4>Normal Delivery</h4>
+                        <input type="radio" name="shipp" checked> 17th December, 2023 (plus 0$) 
+                        <p>Takes 5 days to be delivered</p>
+                    </div>
+                    <div class="shipped">
+                        <h4>Intermediary Delivery</h4>
+                        <input type="radio" name="shipp"> 15th December, 2023 (plus 5$) 
+                        <p>Takes 3 days to be delivered</p>
+                    </div>
+                    <div class="shipped">
+                        <h4>Fast Delivery</h4>
+                        <input type="radio" name="shipp"> 13th December, 2023 (plus 10$) 
+                        <p>Takes 1 day to be delivered</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="orderBlock">
+                <div class="leftSide">
+                    <div class="date">12th December, 2023</div>
+        
+                    <div class="imgCont">
+                        <img src="products/backpack.jpg" alt="">
+                    </div>
+        
+                    <div class="qty">
+                        <p>Quantity: <span><input type="number" value="1"></span></p>
+                        <div class="btns">
+                            <button>+</button>
+                            <button>-</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightSide">
+                    <h3>Delivered on:</h3>
+        
+                    <div class="shipOn">
+                    <div class="shipped">
+                        <h4>Normal Delivery</h4>
+                        <input type="radio" name="ship" checked> 17th December, 2023 (plus 0$) 
+                        <p>Takes 5 days to be delivered</p>
+                    </div>
+                    <div class="shipped">
+                        <h4>Intermediary Delivery</h4>
+                        <input type="radio" name="ship"> 15th December, 2023 (plus 5$) 
+                        <p>Takes 3 days to be delivered</p>
+                    </div>
+                    <div class="shipped">
+                        <h4>Fast Delivery</h4>
+                        <input type="radio" name="ship"> 13th December, 2023 (plus 10$) 
+                        <p>Takes 1 day to be delivered</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- second -->
+        <div class="checkout">
+            <div class="final">
+                <div class="calc">
+                    <h4>VAT:</h4>
+                    <p>15%</p>
+                </div>
+                <div class="calc">
+                    <h4>price:</h4>
+                    <p>15$</p>
+                </div>
+                <div class="calc">
+                    <h4>Unit:</h4>
+                    <p>2 (Qty)</p>
+                </div>
+                <div class="total">
+                    <h4>Total (Before Tax):</h4>
+                    <p>30$</p>
+                </div>
+                <div class="total">
+                    <h4>Total (After Tax):</h4>
+                    <p>40$</p>
+                </div>
+
+
+                <button>Checkout</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+
+.ordersCont{
+    padding: 10px 40px;
+    display: flex;
+    gap: 50px;
+    height: 80vh;
+}
+.order{
+    flex: 60%;
+    height: 100%;
+    overflow: auto;
+}
+marquee,
+.chkOut,
+.ordersCont{
+    position: relative;
+    top: 50px;
+}
+.chkOut{
+    text-align: center;
+}
+.orderBlock{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #f9f9f9;
+    box-shadow: 0 10px 3px rgba(0,0,0,0.06);
+    margin-top: 10px;
+}
+.leftSide{
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+}
+.leftSide .imgCont{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+.leftSide .imgCont img{
+    width: 100%;
+    height: 50%;
+    object-fit: contain;
+}
+.leftSide .qty{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.qty p{
+    display: flex;
+    align-items: center;
+}
+.qty p input{
+    padding-left: 10px;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    border: none;
+    box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+}
+.qty .btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 50%;
+    height: 100%;
+}
+.qty .btns button{
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.rightSide{
+    flex: 50%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.rightSide .shipOn{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #f9f9f9;
+}
+.shipped h4{
+    font-size: 20px;
+    color: green;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+.rightSide h3{
+    font-family: Cambria;
+}
+.shipped p{
+    color: gray;
+    font-size: 13px;
+}
+marquee{
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+.checkout{
+    flex: 40%;
+}
+.final{
+    width: 70%;
+    border: 1px solid #f9f9f9;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    height: 70%;
+    padding: 10px;
+    margin: 0 auto;
+}
+.final .calc{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.final .calc p{
+    border-bottom: 1px dashed #111;
+    width: 90%;
+    text-align: right;
+    margin-left: 10px;
+}
+.final .total{
+    margin-top: 20px;
+    border-top: 1px solid #f5f5f5;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.final button{
+    width: 100%;
+    margin-top: 50px;
+    border: 1px solid transparent;
+    height: 50px;
+    transition: .3s ease-in;
+}
+.final button:hover{
+    cursor: pointer;
+    background-color: rgb(40, 114, 40);
+    color: #fff;
+}
+
+@media(max-width: 842px){
+    .ordersCont {
+        flex-direction: column;
+    }
+    .order{
+        flex: 70%;
+    }
+    .orderBlock .leftSide .imgCont img{
+        height: 200px;
+    }
+    .checkout{
+        flex: 30%;
+    }
+    .final button {
+        margin-top: 0;
+        margin-top: 10px;
+        height: 30px;
+    }
+    .final .total {
+        margin-top: 0;
+    }
+    .final {
+        height: 100%;
+        width: 100%;
+    }
+}
+@media(max-width: 532px){
+    .orderBlock {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        border: 1px solid rgba(0,0,0,0.3);
+    }
+    .order {
+        height: 100%;
+    }
+}

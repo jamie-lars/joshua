@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="cart.css">
+    <title>Cart</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            JOSH'S COLLECTIONS
+        </div>
+
+        <div class="srcCont">
+            <div class="">
+                <img src="icons/search-icon.png" alt="">
+                <input type="text" placeholder="search cart">
+            </div>
+            
+            <button>Search</button>
+        </div>
+        <nav>
+            <li><a href="index.html">
+                <img src="icons/home.png" alt="">
+                <p>Home</p>
+            </a></li>
+            <li><a href="products.html">
+                <img src="icons/checkout-lock-icon.png" alt="">
+                <p>Products</p>
+            </a></li>
+            <li class="active cart"><a href="#">
+                <p class="cartCount">3</p>
+                <img src="icons/cart.png" alt="">
+                <p>Cart</p>
+            </a></li>
+            <li><a href="orders.html">
+                <img src="icons/checkmark.png" alt="">
+                <p>Orders</p>
+            </a></li>
+            <li><a href="contact.html">
+                <img src="icons/contact.png" alt="">
+                <p>Contact</p>
+            </a></li>
+        </nav>
+        <div class="menu">
+            <img src="icons/menu.png" alt="">
+        </div>
+    </header>
+
+    <div class="cartCont">
+        <div class="classify">
+            <div class="name">Name</div>
+            <div class="pro">Product</div>
+            <div class="remove">Remove</div>
+            <div class="update">Update</div>
+        </div>
+
+        <div class="itemCont">
+            <div class="item">
+                <div class="iName">backpack Black</div>
+                <div class="iPro"><img src="products/backpack.jpg" alt=""></div>
+                <div class="iRemove">X</div>
+                <div class="iUpdate">+</div>
+            </div>
+            <div class="item">
+                <div class="iName">CoffeeMaker</div>
+                <div class="iPro"><img src="products/coffeemaker-with-glass-carafe-black.jpg" alt=""></div>
+                <div class="iRemove">X</div>
+                <div class="iUpdate">+</div>
+            </div>
+            <div class="item">
+                <div class="iName">athletic-socks</div>
+                <div class="iPro"><img src="products/athletic-cotton-socks-6-pairs.jpg" alt=""></div>
+                <div class="iRemove">X</div>
+                <div class="iUpdate">+</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
